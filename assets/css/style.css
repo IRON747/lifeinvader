@@ -1,0 +1,647 @@
+@font-face {
+	font-family: 'pricedown_bl';
+	src: url('../fonts/pricedown_bl.otf');
+}
+
+body {
+	line-height: 18px;
+	background-color: #f2f2f2;
+}
+
+a {
+	color: #20AAE5;
+	text-decoration: none;
+}
+
+.top_bar {
+	/*width: 100%;*/
+	min-width: 100%;
+	height: 66px;
+	background-color: #861f1b;
+	border-bottom: 0.5em solid #d22f2a;
+	margin: 0, 0, 10px, 0;
+	display: inline-flex;
+	position: fixed;
+	z-index: 10;
+}
+
+.logo a{
+	font-family: 'pricedown_bl' , sans-serif;
+	margin-left: 30px;
+	font-size: 40px;
+	position: relative;
+	top: 17px;
+	text-shadow: #860000 0.5px 0.5px 0px; 
+	color:  #FFFFF0;
+}
+/*.logo {
+	width: 75%;
+	height: 15px;
+	margin-left: 90px;
+}*/
+a:hover {
+	text-decoration: none;
+}
+nav{
+	float: right;
+	right: 2px;
+	position: absolute;
+	margin: 13px;
+}
+nav a{
+	position: relative;
+	color: #fff;
+	text-decoration: none;
+	font-size: 21px;
+	top: -2px;
+}
+
+nav a:hover {
+	border-bottom: 7px solid black;
+	color: #fff;
+}
+
+.display_name {
+	font-size: 45px;
+	font-weight: bold;
+	padding-right: 22px;
+	float: left;
+}
+
+.wrapper{
+	margin: 0 auto;
+	top: 60px;
+	position: relative;
+	padding: 0 10px;
+	width: 75%;
+	min-width: 950px;
+}
+
+.column {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 8px;
+    border: 2px solid #D3D3D3;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #D3D3D3;
+    z-index: -1;
+    color: #555;
+}
+
+.user_details{
+	width: 270px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.user_details img{
+	height: 125px;
+	border-radius: 6px;
+	margin-right: 6px;
+}
+
+.user_details_left_right {
+	width: 120px;
+	display: inline-block; 
+	position: absolute;
+}
+
+
+.main_column {
+	float: right;
+	width: 74%;
+	z-index: -1;
+	min-height: 170px;
+}
+
+.post_form {
+	width: 100%;
+}
+
+.post_form textarea {
+	width: 82%;
+	height: 60px;
+	border-radius: 5px;
+	margin-right: 5px;
+	border: 1px solid #D3D3D3;
+	font-size: 14px;
+	padding: 5px;
+}
+
+textarea:focus{
+	outline: 0;
+}
+
+.post_form input[type="submit"] {
+	width: 12%;
+	height: 60px;
+	border: none;
+	border-radius: 10px;
+	background-color: #b80101;
+	font-family:  sans-serif;
+	color: #fff;
+	text-shadow: #860000 0.5px 0.5px 0px; 
+	font-size: 15px;
+	position: absolute;
+	outline: 0;
+	margin: 0;
+}
+
+.post_form input[type="submit"]:active {
+	padding: 6px 4px 4px 6px;
+	color: black;
+}
+
+.status_post {
+	width: 96%;
+	font-size: 16px;
+	padding: 0px 5px;
+	min-height: 75px;
+	cursor: pointer;
+}
+
+.post_profile_pic {
+	float: left;
+	margin-right: 8px;
+}
+
+.post_profile_pic img{
+	border-radius: 6px;
+}
+
+#comment_iframe {
+	max-height: 260px;
+	width: 100%;
+	margin-top: 6px;
+}
+
+.comment_section{
+	padding: 0 6px 6px 6px;
+}
+
+.comment_section img{
+	margin: 0 3px 3px 3px;
+	border-radius: 3px;
+}
+
+#comment_form textarea{
+	border-color: #D3D3D3; 
+	width: 85%;
+	height: 35px;
+	border-radius: 5px;
+	color: #616060;
+	font-size: 15px;
+	margin: 3px 3px 3px 3px;
+}
+
+#comment_form input[type="submit"] {
+	border: none;
+	background-color: #B80101;
+	color: #156588;
+	border-radius: 5px;
+	width: 13%;
+	height: 35px;
+	margin-top: 3px;
+	position: absolute;
+	font-family:  sans-serif;
+	color: #fff;
+	text-shadow: #860000 0.5px 0.5px 0px; 
+}
+
+.newsfeedPostOptions {
+	padding: 0px;
+	text-decoration: none;
+	color: #20bcf0;
+	border: none;
+}
+
+.newsfeedPostOptions iframe {
+	border: 0px;
+	height: 18px;
+	width: 120px;
+}
+
+
+
+.comment_like {
+	background-color: transparent;
+	border: none;
+	font-size: 15px;
+	color: #3498db;
+	padding: 0;
+	height: auto;
+	width: auto;
+	margin-top: 4px;
+}
+
+.like_value{
+	display: inline;
+	font-size: 15px;
+}
+
+.profile_left {
+	top: 64px;
+	width: 14%;
+	max-width: 250px;
+	min-width: 140px;
+	height: 465px;
+	float: left;
+	position: fixed;
+	background-color: #ff9a9a;
+	border-right: 12px solid #ff3030;
+	color: #000;
+	margin-right: 40px;
+}
+
+.profile_left img{
+	min-width: 156px;
+	width: 80%;
+	margin: 22px;
+	border: 6px solid #ff3030;
+	border-radius: 45px;
+}
+
+.profile_info {
+	display: flow-root;
+	background-color: #ff5656;
+	width: 100%;
+	padding: 10px 0 10px 0;
+}
+
+.profile_info p{
+	margin: 0 0 0 32px;
+	word-wrap: break-word;
+}
+
+.btn btn-secondary{
+	color: #fff;
+	background-color:#6c757d;
+}
+
+.btn btn-info{
+	background-color: #17a2b8;
+}
+
+.profile_left input[type="submit"] {
+	width: 82%;
+	height: 37px;
+	float: left;
+	border-radius: 12px;
+	margin: 14px 0 0 17px;
+	border: none;
+	color: #fff;
+}
+
+#accept_button {
+	width: 15%;
+	height: 34px;
+	border-radius: 10px;
+	margin: 8px;
+	color: #fff;
+	border: none;
+	background-color: #2ecc71;
+}
+
+#ignore_button {
+	width: 15%;
+	height: 34px;
+	border-radius: 10px;
+	margin: 8px;
+	color: #fff;
+	border: none;
+	background-color: #e74c3c;
+}
+
+
+.btn-danger {
+
+    color: #fff;
+    background-color: #d9534f;
+    border: #d43f3a;
+
+
+  }
+
+ .delete_button {
+	height: 26px;
+    width: 26px;
+    padding: 0;
+    float: right;
+    border-radius: 4px;
+    right: -20px;
+    position: relative;
+
+}
+
+.delete_button:hover{
+	background-color: #dc3545/*#ff3030*/;
+	color: white;
+}
+
+.profile_main_column {
+	min-width: 675px;
+    float: right;
+    width: 70px;
+    margin-right: 15%;
+    z-index: -1;
+}
+
+.profile_info_bottom {
+	/*margin: 10 0 0 7px;*/
+	/*padding-right: 20px;
+	padding-left: 32px;
+	padding-top: 48%;
+*/
+	margin-right: 12px;
+	margin-left: 30px;
+	margin-top: 95px;
+}
+
+#message_textarea {
+	width: 80%;
+	margin-right: 8px;
+	height: 60px;
+	border-radius: 5px;
+	border-radius: 1px solid #D3D3D3;
+	font-size: 12px;
+}
+
+
+#message_submit {
+	height: 58px;
+	width: 120px;
+	margin-top: 0px;
+	position: absolute;
+	border: none;
+	background-color: #B80101;
+	border-radius: 5px;
+	font-family: sans-serif;
+	color: #fff;
+	text-shadow: #860000 0.5px 0.5px 0px;
+}
+
+.message {
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 5px 10px;
+	display: inline-flex;
+	color: #fff;	
+}
+
+.message#blue{
+	background-color: #3498db;
+	border-color: #2980b9;
+	float: right;
+	margin-bottom: 5px;
+}
+
+.message#green{
+	background-color: #27ae60;
+	border-color: #2ecc71;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.loaded_messages{
+	height: 65%;
+	min-height: 300px;
+	max-height: 400px;
+	overflow: scroll;
+	margin-bottom: 10px;
+}
+
+.loaded_conversations {
+	max-height: 210px;
+	overflow: scroll;
+}
+
+.user_found_messages{
+	border-bottom: 1px solid #D3D3D3;
+	padding: 8px 8px 10px 8px
+}
+
+.user_found_messages:hover{
+	background-color: #D3D3D3;
+}
+
+.user_found_messages img{
+	height: 35px;
+	float: left;
+}
+
+#grey {
+	color: #8c8c8c;
+}
+
+.resultDisplay {
+	padding: 6px 5px 0 5px;
+	height: 75px;
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.resultDisplay a{
+	float: none;
+}
+
+.resultDisplay:hover{
+	background-color: #ebebeb;
+	text-decoration: none;
+}
+
+.liveSearchProfilePic img{
+	height: 60px;
+	border-radius: 14px;
+	margin: 2px 16px 0 4px;
+	float: left;
+}
+
+.liveSearchText {
+	background-color: transparent;
+	color: #1e96ca;
+}
+
+.liveSearchText p{
+	margin-left: 63px;
+	font-size: 12px;
+}
+
+.tabcontent {
+	margin-top: 25px;
+}
+
+.dropdown_data_window {
+	/*height: 280px;
+	padding: 0px;*/
+	background-color: #fff;
+	border: 1px solid #dadada;
+	border-radius: 0 0 8px 8px;
+	border-top: none
+	width: 310px;
+	position: absolute;
+	right: 60px;
+	top: 58px;
+	overflow: scroll; 
+}
+
+.notification_badge {
+	padding: 3px 7px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #000000;
+    border-radius: 14px;
+    position: absolute;
+    left: 20.5px;
+    top: -13px;
+}
+
+.postedImage img {
+	max-height: 300px;
+	max-width: 100%;
+	display: block;
+	margin: 5px auto;
+}
+
+.resultDisplayNotification {
+	height: auto;
+	padding-bottom: 7px;
+	
+}
+
+.resultDisplayNotification img{
+	height: 40px;
+	border-radius: 5px;
+	margin: 1px 12px 0px 2px;
+	float: left;
+}
+
+.timestamp_smaller {
+	font-size: 85%;
+	margin: 0;
+}
+
+.search {
+	margin: 10px 0 0 13%;
+}
+
+.search #search_text_input {
+	border: thin solid #e5e5e5;
+    float: left;
+    height: 35px;
+    margin-top: 2px;
+    font-size: 17px;
+    outline: 0;
+    width: 156px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button_holder {
+	background-color: #F1F1F1;
+    border: thin solid #e5e5e5;
+    cursor: pointer;
+    float: left;
+    margin-top: 2px;
+    height: 35px;
+    text-align: center;
+    width: 50px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.button_holder img{
+	margin-top: 6px;
+    width: 24px;
+}
+
+.search_results {
+	background-color: #fff;
+	border: 1px solid #DADADA;
+	border-bottom: none;
+	border-top: none;
+	margin-top: 35px;
+}
+
+.search_results_footer{
+	padding: 6px 5px 0px 6px;
+	height: 30px;
+	border: 1px solid #dadada;
+	border-top-right-radius: none;
+	background-color: #ff3030;
+	text-align: center;
+}
+
+.search_results_footer a{
+	color: #fff;
+}
+
+.search_result {
+	padding: 10px;
+	height: 100px;
+}
+
+.searchPageFriendButtons {
+	float: right;
+}
+.searchPageFriendButtons input[type="submit"]{
+	border: none;
+	padding: 7px 12px;
+	border-radius: 5px;
+	color: #fff;
+}
+.result_profile_pic {
+	float: left;
+	margin-right: 10px;
+}
+
+#search_hr {
+	margin-bottom: 0px;
+}
+
+.small_profile_pic {
+	height: 180px;
+	margin: 1px 20px 0px 3px;
+	float: left;
+}
+
+#settings_input {
+	border: 2px solid #ccc;
+    height: 28px;
+    padding: 12px 6px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    width: 180px;
+}
+
+.settings_submit {
+	border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  .top_bar{
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  .top_barr {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  .top_bar {
+    width: 480px ;
+  }
+}
