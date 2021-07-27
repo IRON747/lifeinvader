@@ -5,4 +5,5 @@ Instructions for installation:
 1. Download XAMPP server. Preferably version 7.4.21 / PHP 7.4.21.
 2. Install XAMPP on c drive. (follow default installation process)
 3. Extract the lifeinvader folder c:xampp/htdocs/
-4. Then install the database
+4. Then import the database (social.sql) file into the xampp myadmin database.
+5. 
